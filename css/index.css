@@ -49,6 +49,8 @@ table {
 
 * {
     box-sizing: border-box;
+    border: 1px solid greenyellow;
+    color: rgb(225,239, 230);
 }
 
 html {
@@ -93,6 +95,50 @@ header {
     background-repeat: no-repeat;
 }
 
+.header {
+    height: 25%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(0, 4, 17, .8);
+}
+
+h1 {
+    height: 33.3%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav{
+    height: 66.6%;
+    width: 100%;
+}
+
+.links {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: rgb(225,239, 230);
+}
+
+.socials {
+    height: 50%;
+    width: 15%;
+    margin-left: 42.5;
+    margin-right: 42.5%;
+    display: flex;
+    color: rgb(225,239, 230);
+    justify-content: space-around;
+}
+
+
 /* spacers */
 .spacer {
     width: 100%;
@@ -108,15 +154,30 @@ header {
 /* gallery section */
 .gallery {
     width: 100%;
-    height: 100vh;
+    height: 181.5vh;
     text-align: center;
     background-color: rgb(0, 4, 17);
+    display: flex;
+}
+.images {
+    display: flex;
+    width: 100vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image-row {
+    padding-top: 1%;
+    padding bottom: 1%;
+    display: flex;
+    width: 100vh;
+    justify-content: space-evenly;
 }
 
 /* about us section */
 .about {
     width: 100%;
-    height: 75vh;
+    height: 120vh;
     text-align: center;
     background-image: url("../img/staff-cooks.jpg");
     background-size: cover;
@@ -125,7 +186,7 @@ header {
 }
 
 .about-container {
-    height: 100%;
+    height: 120vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -155,6 +216,20 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgb(0, 4, 17, .8);
+    display: flex;
+}
+
+.email-container{
+    width: 33.33%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.email-container h5{
+    width: 100%;
+    text-align: center;
+    align-items: center;
 }
 
 .contact h2 {
@@ -189,17 +264,23 @@ header {
 }
 
 /* footer section */
-footer {
-    width: 100%;
-    height: 15vh;
-    padding-top: 2.5vh;
-    font-size: 3rem;
+
+.footer a{
+    display: flex;
+    justify-content:space-around;
+    width: 20%;
+}
+.copyright{
+    height: 10%;
+
 }
 
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+    .header{
+
+    }
 
     /* gallery section */
     .gallery {
